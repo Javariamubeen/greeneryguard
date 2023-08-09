@@ -1,0 +1,38 @@
+.thankyou-body{
+    text-align: left;
+    margin: auto;
+    padding-bottom: 200px;
+    width: 70%;
+    line-height: 90px;
+
+}
+
+.mes-1{
+    font-size: 45px;
+    padding: 0px 15px;
+
+
+}
+
+.mes-2{
+    font-size: 23px;
+    background-color: lightgrey;
+    padding: 0px 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .thankyou-body{
+        padding-bottom: 80px;
+        width: 85%;
+        line-height: 45px;
+    }
+    
+    .mes-1{
+        font-size: 25px;
+    }
+    
+    .mes-2{
+        font-size: 13px;
+        padding: 0px 15px;
+    }
+}

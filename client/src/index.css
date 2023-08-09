@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+#toast-container>.toast-success {
+  background-color:rgb(113,182,112);
+}
+#toast-container>.toast-info {
+  background-color:rgb(82,169,194);
+}
+#toast-container>.toast-warning {
+  background-color:rgb(249,168,32);
+}
+#toast-container>.toast-error {
+  background-color:rgb(202,91,83);
+}
+

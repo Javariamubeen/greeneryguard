@@ -1,0 +1,50 @@
+.item-root{
+    font-family: 'im_fell_french_canonregular';
+}
+
+.multiple-counts{
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    h2 {
+        a {
+            text-decoration: underline;
+            color: #000;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .multi-col {
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+        padding: 0 15px;
+        margin-bottom: 50px;
+        &:last-child {
+            width: 70%;
+            column-count: 2;
+             @media (max-width: 767px) {
+              column-count: 1;
+          } 
+        }
+         @media (max-width: 767px) {
+             display: block;
+             width: 100%;
+             padding: 0;
+         }
+         
+    }
+    // column-count: 2;
+    //  div:last-child{
+    //      display: block;
+    //       column-count: 2;
+    //       width: 100%;
+    //      column-gap:10%; 
+    //      @media (max-width: 767px) {
+    //          column-count: 1;
+    //      } 
+    //  }
+    
+}

@@ -1,0 +1,111 @@
+
+.card-frame {
+    position: relative;
+
+    margin-bottom: 100px;
+    font-family: 'aileronthin';
+    font-size: x-large;
+    font-weight: bold;
+    color: #01253a;
+}
+h3 {
+    font-size: 18px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    min-height: 66px;
+    overflow-wrap: break-word;
+}
+@media (max-width: 767px) {
+    h3 {
+        font-size: 26px;
+    }
+}
+.card-frame:after {
+     content: "";
+     position: absolute;
+     background-color: #bbbbbb;
+     left: 8px;
+     right: -8px;
+     top: 8px;
+     bottom: -8px;
+ }
+
+.card-holder {
+    background-color: #ebebeb;
+    color: #01253a;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin: 0 -9px;
+}
+.card-holder .col-frame {
+    top: -15px;
+    position: relative;
+}
+.card-holder .col-frame .col-md-6 {
+    margin-bottom: 15px;
+}
+.card-holder:before {
+     content: "";
+     position: absolute;
+     background-color: #01253a;
+     left: 0;
+     right: 0;
+     height: 60px;
+     z-index: 1;
+ }
+.col-frame h3 {
+    margin-bottom: 0;
+}
+.col-frame figure {
+    position: relative;
+    z-index: 99;
+}
+.col-frame figure img {
+    margin: -50px;
+    padding: 30px;
+    width: auto;
+    max-width: 82%;
+    max-height: 165px;
+}
+
+.counter-holder {
+display: flex;
+font-size: 18px;
+}
+.counter-holder span {
+background-color:  #01253a;
+color: #fff;
+display: inline-flex;
+width: 148px;
+height: 55px;
+padding: 5px;
+align-content: center;
+align-items: center;
+justify-content: center;
+font-size: 46px;
+cursor: pointer;
+}
+.counter-holder input {
+display: inline-flex;
+border: 2px solid #777;
+margin: 0 2px;
+padding: 0 10px;
+text-align: center;
+width: 150px;
+font-size: 30px;
+}
+
+.text-block {
+text-align: left;
+padding: 30px 15px 15px;
+}
+
+.description {
+    display: block;
+    max-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}

@@ -1,0 +1,125 @@
+@import "../../../../variables.less";
+.content-nav {
+  font-family: "IMFellRegular";
+    .main-nav {
+        flex-direction: row;
+
+    }
+  a {
+    color: black;
+  }
+  cursor: pointer;
+
+}
+
+
+#nav-topic {
+    background-color: white;
+    font-size:1.1rem;
+    @media (max-width: 991px) {
+        // font-size: 1rem;
+    }
+    @media (max-width: 767px) {
+        // font-size: 0.8rem;
+    }
+    &:after {
+        top: auto;
+        bottom: 0;
+    }
+    .navbar-nav {
+        @media (max-width: 991px) {
+            // flex-direction: column;
+            text-align: left;
+        }
+    }
+    .main-nav {
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 991px) {
+            justify-content: flex-start;
+            text-align: left;
+        }
+        >li {
+            position: relative;
+            padding: 0 5px;
+
+            // @media (max-width: 1199px) {
+            //     padding: 0;
+            // }
+
+            &:first-child {
+                padding-left: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: calc(50% - 5px);
+                height: 10px;
+                width: 1px;
+                background-color: #01253A;
+
+                @media (max-width: 991px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+#nav-topic li a {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    overflow: hidden;
+    position: relative;
+}
+
+#nav-topic li a.active,
+#nav-topic li a:focus,
+#nav-topic li a:hover {
+    color: @gray;
+}
+
+#nav-topic li a:after {
+    background: @gray;
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0;
+    z-index: -1;
+    height: 2px;
+    right: 100%;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#nav-topic li:focus a:after,
+#nav-topic li a:focus:after,
+#nav-topic li a.avtive:after,
+#nav-topic li.active a:after,
+#nav-topic li a:hover:after,
+#nav-topic li:hover a:after {
+    right: 0.5rem;
+}
+.taxes-header {
+    @media (max-width: 767px) {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        .align-self-end {
+            align-self: center !important;
+        }
+    }
+}

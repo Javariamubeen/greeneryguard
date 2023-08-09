@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "ellxmpst",
+    "password": "e6_SMQ6Ykain0R2W9n38s4ikwsYlD-4H",
+    "database": "ellxmpst",
+    "host": "drona.db.elephantsql.com",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "e6_SMQ6Ykain0R2W9n38s4ikwsYlD-4H",
+    "database": "ellxmpst",
+    "host": "drona.db.elephantsql.com",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "e6_SMQ6Ykain0R2W9n38s4ikwsYlD-4H",
+    "database": "ellxmpst",
+    "host": "drona.db.elephantsql.com",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
